@@ -1,7 +1,7 @@
 //styled components, instalar biblioteca:
 //npm install --save styled-components
 import styled from "styled-components"
-import Background from "./assets/Background.svg"
+import Background from "../../assets/Background.svg"
 
 export const Div = styled.div`
     background: url("${Background}");
@@ -68,6 +68,7 @@ export const Input = styled.input`
 export const Button = styled.button`
     width: 342px;
     height: 74px;
+    margin-top: 130px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 14px;
     font-style: normal;
@@ -88,32 +89,5 @@ export const Button = styled.button`
 
     &:active{
         opacity: 0.5;
-    }
-`
-
-export const User = styled.li`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    width: 342px;
-    height: 58px;
-    padding-left: 25px;
-
-    p{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    color: #FFFFFF;
-    }
-
-    button{
-        background: none;
-        border: none;
-        cursor: pointer;
     }
 `
