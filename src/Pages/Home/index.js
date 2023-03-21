@@ -1,6 +1,7 @@
 // import React from 'react'
 import React, { useState, useRef } from "react"
 import axios from "axios"
+import { useHistory } from "react-router-dom"
 import { Div, Image, DivItems, H1, InputLabel, Input, Button } from "./style"
 import People from "../../assets/people.svg"
 import Arrow from "../../assets/arrow.svg"
@@ -14,6 +15,8 @@ function App() {
   const [users, setUsers] = useState([])
   const inputName= useRef()
   const inputAge= useRef()
+  
+  const history = useHistory()
 
   async function addNewUser(){
     //Guardar dados no back-end:
@@ -21,9 +24,11 @@ function App() {
     // setUsers(newUser.data)
     
     //Add dados no array users:
-    setUsers([...users, { id: Math.random(), name: inputName.current.value, age: inputAge.current.value}])
+    setUsers([...users, newUser])
     //Estado no react é IMUTÀVEL, não dá para usar push precisa criar um novo array para aparecer
     //Se é IMUTÁVEL, como manter usuários antigos? SPREAD OPERATOR usar "...users"
+    
+    history.push("/usuarios")
   }
   
   //Linguagem JS
@@ -39,6 +44,7 @@ function App() {
         <Button onClick={addNewUser}>
           Cadastrar <img alt="arrow" src={Arrow} />
         </Button>
+        
         
         </DivItems>
       

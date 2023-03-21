@@ -1,6 +1,7 @@
 // import React from 'react'
 import React, { useState, useEffect } from "react"
 import axios from "axios"
+import { useHistory } from "react-router-dom"
 import { Div, Image, DivItems, H1, Button, User } from "./style"
 import Avatar from "../../assets/avatar.svg"
 import Arrow from "../../assets/arrow.svg"
@@ -13,6 +14,11 @@ import Trash from "../../assets/trash.svg"
 function Users() {
   // React HOOKS => Ferramentas auxiliares
   const [users, setUsers] = useState([])
+
+  const history = useHistory()
+  function goBackPage(){
+    history.push("/")
+  }
 
   //UseEffect - efeito colateral
   //Chamado qndo página carrega OU mudar o estado de dependência mudar 
@@ -47,7 +53,7 @@ function Users() {
             ))}
           
         </ul>
-        <Button>
+        <Button onClick={goBackPage}>
         <img alt="arrow" src={Arrow} /> Voltar 
         </Button>
         
