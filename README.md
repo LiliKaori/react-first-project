@@ -1,3 +1,25 @@
+# Projeto Cadastro de usuários
+
+Primeiro projeto realizado com **Create React App** nas aulas do DevClub.\
+As tecnologias usadas para o projeto foram <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />, <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"> e <img src ="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt ="Node.js"> com estilização utilizando <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/>\
+\
+O projeto cadastra o usuário digitado que é acrescentado à lista de usuários na página seguinte, sendo possível excluir o usuário que desejar.\
+\
+Para rodar a aplicação é utilizar o back-end que encontra no repositório "Node-first-project" e instalar as dependências ao digitar no terminal:\
+**npm i**\
+\
+Para com o back-end iniciado, também é preciso iniciar esta aplicação ao digitar no terminal:\
+**npm start**
+
+<br>
+<br>
+<div> 
+<img src="./src/assets/homeDesktop.png" width="300px"/>
+<img src="./src/assets/userDesktop.png" width="300px"/>
+</div>
+
+<video src="./src/assets/reactFirstProject.mp4" autoplay> </video>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

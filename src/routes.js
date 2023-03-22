@@ -11,8 +11,8 @@ function Routes() {
     return (
         <Router>
             <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/usuarios" component={Users} />
+                <Route exact path="/react-first-project" component={Home} />
+                <Route exact path="/react-first-project/usuarios" component={Users} />
             </Switch>
         </Router>
     )
