@@ -25,7 +25,7 @@ function App() {
 
   async function addNewUser(){
     //Guardar dados no back-end:
-    const newUser = await axios.post("http://localhost:3001/users", {name: inputName.current.value, age: inputAge.current.value})
+    const newUser = await axios.post("https://node-first-project-beta.vercel.app/users", {name: inputName.current.value, age: inputAge.current.value})
     // setUsers(newUser.data)
     
     //Add dados no array users:

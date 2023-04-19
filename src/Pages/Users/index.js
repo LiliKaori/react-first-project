@@ -31,14 +31,14 @@ function Users() {
   useEffect(()=>{
     async function fetchUsers(){
       //Mostrar na tela o array guardado no back-end
-      const newUsers = await axios.get("http://localhost:3001/users") 
+      const newUsers = await axios.get("https://node-first-project-beta.vercel.app/users") 
       setUsers(newUsers.data)    
     }
     fetchUsers()    
   }, [])
 
   async function deleteUser(userId){
-    await axios.delete(`http://localhost:3001/users/${userId}`)
+    await axios.delete(`https://node-first-project-beta.vercel.app/users/${userId}`)
     const newUsers = users.filter(user => user.id !== userId)
     setUsers(newUsers)
   }
